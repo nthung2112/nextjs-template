@@ -82,7 +82,7 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"div">)
 									value={fullname}
 									id="name"
 									type="text"
-									placeholder="Achour Meguenni"
+									placeholder="Andy"
 									required
 								/>
 							</div>
