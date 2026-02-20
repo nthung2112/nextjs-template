@@ -1,16 +1,16 @@
 "use client";
+import { Loader2, Terminal } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-
-import { useRouter } from "next/navigation";
-
 import { authClient } from "@/lib/auth-client";
+import { cn } from "@/lib/utils";
+
 import { Alert, AlertDescription } from "../ui/alert";
-import { Loader2, Terminal } from "lucide-react";
 
 export function SignupForm({ className, ...props }: React.ComponentProps<"div">) {
 	const router = useRouter();
